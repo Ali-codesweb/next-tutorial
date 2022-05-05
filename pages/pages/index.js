@@ -4,14 +4,14 @@ import { useRouter } from "next/router";
 function Home() {
   const router = useRouter();
   function handleClick() {
-    router.push("/product");
+    router.push("/pages/product");
   }
   return (
     <div>
       <h1>Home</h1>
-      <Link href={"/blog"}>Blog</Link>
+      <Link href={"/pages/blog"}>Blog</Link>
       <div>
-        <Link href={"/product"}>Products</Link>
+        <Link href={"/pages/product"}>Products</Link>
       </div>
       <button
         onClick={handleClick}
